@@ -1,0 +1,80 @@
+group 'plugin.album'
+version '1.0'
+
+buildscript {
+    repositories {
+        google()
+        jcenter()
+        maven { url 'https://maven.aliyun.com/repository/releases' }
+        maven { url 'https://jitpack.io' }
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.5.0'
+    }
+}
+
+rootProject.allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url 'https://maven.aliyun.com/repository/releases' }
+        maven { url 'https://jitpack.io' }
+    }
+}
+
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 28
+
+    defaultConfig {
+        minSdkVersion 16
+        multiDexEnabled true
+    }
+    lintOptions {
+        disable 'InvalidPackage'
+    }
+
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.debug
+            ndk {
+                abiFilters "armeabi-v7a", "arm64-v8a", "x86"
+            }
+        }
+        release {
+            signingConfig signingConfigs.debug
+            ndk {
+                abiFilters "armeabi-v7a"
+            }
+        }
+    }
+
+//    repositories {
+//        flatDir {
+//            dirs 'libs'
+//        }
+//    }
+}
+
+configurations {
+    cleanedAnnotations
+    compile.exclude group: 'org.jetbrains' , module:'annotations'
+}
+
+dependencies {
+    //https://help.aliyun.com/document_detail/124711.html?spm=a2c4g.11186623.6.1079.a9ea1bc7WxDrpL
+    //https://maven.aliyun.com/mvn/search
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'com.aliyun.sdk.android:AliyunPlayer:4.7.4-full'
+    implementation 'com.alivc.conan:AlivcConan:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+    implementation 'top.zibin:Luban:1.1.8'
+    implementation 'org.greenrobot:eventbus:3.2.0'
+    implementation 'org.jetbrains:annotations-java5:15.0'
+    implementation "com.github.yyued:SVGAPlayer-Android:2.5.3"
+}
+

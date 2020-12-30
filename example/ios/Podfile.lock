@@ -1,0 +1,61 @@
+PODS:
+  - album (0.0.1):
+    - Flutter
+    - Masonry (= 1.1.0)
+    - QTEventBus (= 0.4.1)
+    - SDWebImage (= 5.0.6)
+    - SVProgressHUD (= 2.2.5)
+    - YYCache (= 1.0.4)
+    - YYImage/WebP (= 1.0.4)
+  - Flutter (1.0.0)
+  - Masonry (1.1.0)
+  - permission_handler (5.0.1):
+    - Flutter
+  - QTEventBus (0.4.1):
+    - QTEventBus/Core (= 0.4.1)
+  - QTEventBus/Core (0.4.1)
+  - SDWebImage (5.0.6):
+    - SDWebImage/Core (= 5.0.6)
+  - SDWebImage/Core (5.0.6)
+  - SVProgressHUD (2.2.5)
+  - YYCache (1.0.4)
+  - YYImage/Core (1.0.4)
+  - YYImage/WebP (1.0.4):
+    - YYImage/Core
+
+DEPENDENCIES:
+  - album (from `.symlinks/plugins/album/ios`)
+  - Flutter (from `Flutter`)
+  - permission_handler (from `.symlinks/plugins/permission_handler/ios`)
+
+SPEC REPOS:
+  trunk:
+    - Masonry
+    - QTEventBus
+    - SDWebImage
+    - SVProgressHUD
+    - YYCache
+    - YYImage
+
+EXTERNAL SOURCES:
+  album:
+    :path: ".symlinks/plugins/album/ios"
+  Flutter:
+    :path: Flutter
+  permission_handler:
+    :path: ".symlinks/plugins/permission_handler/ios"
+
+SPEC CHECKSUMS:
+  album: 9b062f8b75bc0767ab252e902c3ba5eb333b1ffa
+  Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  permission_handler: 7022f8972d2d85ce95c1040db945f28bdbfa45d1
+  QTEventBus: ea42577d40303f11fb2392e1383fb5d4a7335609
+  SDWebImage: 920f1a2ff1ca8296ad34f6e0510a1ef1d70ac965
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  YYCache: 8105b6638f5e849296c71f331ff83891a4942952
+  YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
+
+PODFILE CHECKSUM: f32fb4e7c14f8b3ca19a369d7be425dd9241af27
+
+COCOAPODS: 1.10.0.beta.2

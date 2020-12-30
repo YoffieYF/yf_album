@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="LaunchTheme" parent="@android:style/Theme.Black.NoTitleBar">
+        <!-- Show a splash screen on the activity. Automatically removed when
+             Flutter draws its first frame -->
+        <item name="android:windowBackground">@drawable/launch_background</item>
+    </style>
+
+<!--    <style name="ImagePickerTheme" parent="@android:style/Theme.Light.NoTitleBar">-->
+<!--        <item name="android:fitsSystemWindows">true</item>-->
+<!--    </style>-->
+
+    <style name="ImagePickerTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:fitsSystemWindows">true</item>
+    </style>
+    <style name="TransparentBarTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="statusBarBackground">@color/transparent</item>
+    </style>
+
+    <style name="ShowMediaTheme" parent="ImagePickerTheme">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="Widget.Dialog" parent="android:Theme.Dialog">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:windowSoftInputMode">adjustNothing|stateAlwaysHidden</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+
+    <style name="Widget.ProgressDialog" parent="Widget.Dialog">
+        <item name="android:windowBackground">@color/transparent</item>
+    </style>
+
+    <style name="DownLoader.Dialog" parent="Widget.Dialog">
+        <item name="android:windowBackground">@color/download_bg</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="Widget.FullScreenDialog" parent="Widget.Dialog">
+        <item name="android:windowBackground">@color/transparent</item>
+        <!-- 竖屏宽度 -->
+        <item name="android:windowMinWidthMinor">100%</item>
+    </style>
+
+    <style name="AnimBottom" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+    
+    <style name="BigVideoPause">
+        <item name="android:src">@mipmap/icon_video_big_pause</item>
+        <item name="android:layout_width">70dp</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:scaleType">center</item>
+        <item name="android:background">@drawable/video_big_pause_bg</item>
+    </style>
+</resources>

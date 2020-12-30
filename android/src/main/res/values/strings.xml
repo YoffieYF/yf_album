@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="preview_image_count">%1$s/%2$s</string>
+    <string name="err_hint_permission">使用该功能，请授予访问权限</string>
+    <string name="select_picture">请选择图片</string>
+    <string name="err_hint_select_count">最多只能选择9个图片或视频</string>
+    <string name="err_hint_video_size">不能分享超过100M的视频</string>
+    <string name="err_hint_video_length">不能分享超过5分钟的视频</string>
+    <string name="err_hint_emoji_size">上传自定义表情大小不能超过10MB</string>
+    <string name="err_hint_look_fail">查看失败，请稍微再试</string>
+</resources>

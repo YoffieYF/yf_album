@@ -1,0 +1,27 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="plugin.album">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!--agora 声网-->
+
+    <!--  华为通知管理访问权限  -->
+    <uses-permission android:name="com.huawei.systemmanager.permission.ACCESS_INTERFACE" />
+
+    <application>
+        <activity android:name=".activity.PickerActivity" android:screenOrientation="nosensor" android:theme="@style/ImagePickerTheme" />
+        <activity android:name=".activity.PreviewActivity" android:screenOrientation="nosensor" android:theme="@style/TransparentBarTheme" />
+        <activity android:name=".activity.MediaActivity" android:screenOrientation="nosensor" android:theme="@style/TransparentBarTheme" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"
+                />
+        </provider>
+    </application>
+</manifest>

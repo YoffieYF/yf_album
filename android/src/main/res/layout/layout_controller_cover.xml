@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible">
+
+    <plugin.album.view.touchview.LinearLayoutTouch
+        android:id="@+id/cover_player_controller_bottom_container"
+        android:layout_width="match_parent"
+        android:layout_height="114dp"
+        android:layout_alignParentBottom="true"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:paddingLeft="22dp"
+        android:paddingRight="20dp"
+        android:visibility="visible"
+        android:background="@drawable/video_controller_bottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <plugin.album.view.touchview.ImageViewTouch
+                android:id="@+id/cover_player_controller_image_view_play_state"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/selector_play_state" />
+
+            <TextView
+                android:id="@+id/cover_player_controller_text_view_curr_time"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="14dp"
+                android:gravity="center"
+                android:text="00:00"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+
+            <plugin.album.view.touchview.SeekBarTouch
+                android:id="@+id/cover_player_controller_seek_bar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:maxHeight="2dp"
+                android:minHeight="2dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:progressDrawable="@drawable/style_video_player_video_seekbar"
+                android:splitTrack="false"
+                android:thumb="@drawable/selector_seek_bar_thumb" />
+
+            <TextView
+                android:id="@+id/cover_player_controller_text_view_total_time"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="00:00"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:paddingBottom="14dp">
+
+            <plugin.album.view.touchview.ImageViewTouch
+                android:id="@+id/cover_player_controller_close"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@mipmap/icon_close_white" />
+
+            <plugin.album.view.touchview.ImageViewTouch
+                android:id="@+id/cover_player_controller_more"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/icon_video_more" />
+        </RelativeLayout>
+    </plugin.album.view.touchview.LinearLayoutTouch>
+</RelativeLayout>

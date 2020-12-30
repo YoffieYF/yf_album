@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4f4f4f">
+
+    <plugin.album.view.EasyPullLayout
+        android:id="@+id/easy_pull_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:trigger_offset_left="10dp"
+        app:trigger_offset_right="10dp">
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_type="edge_left"/>
+<!--        <View-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"-->
+<!--            app:layout_type="edge_right"/>-->
+
+        <plugin.album.view.ViewPagerFixed
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000"
+            app:layout_type="content"/>
+
+    </plugin.album.view.EasyPullLayout>
+
+</RelativeLayout>

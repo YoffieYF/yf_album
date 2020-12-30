@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <plugin.album.view.alivideo.AliVideoView
+        android:id="@+id/video_view"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"/>
+
+    <Button
+        android:id="@+id/test_multimedia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/video_view"
+        android:layout_marginTop="50dp"
+        android:text="AAAAAAAAAA"/>
+
+    <Button
+        android:id="@+id/test_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/test_multimedia"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>
