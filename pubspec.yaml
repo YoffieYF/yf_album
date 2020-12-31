@@ -1,8 +1,7 @@
-name: album
+name: yf_album
 description: A new Flutter plugin.
 version: 0.0.1
-homepage: https://github.com/YoffieYF/Yoffie
-author: Yoffie<a108173590@gmail.com>
+homepage: https://github.com/YoffieYF/yf_album
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
